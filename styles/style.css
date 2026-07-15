@@ -1,5 +1,8 @@
 .header {
-
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 96px 50px 100px;
 }
 
 /* .header__menu {
@@ -7,39 +10,46 @@
 } */
 
 .header__links-list {
-
+  display: flex;
+  justify-content: space-evenly;
+  gap: 13px;
 }
 
 .header__links-list-item {
-
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
-
+  list-style: none;
 }
 
-.header__link {
+/* Ссылка должна занимать только нужное пространство */
 
+.header__link {
+  align-items: flex-start;
 }
 
 .header__link_active {
-    
+  text-decoration: none;
 }
 
 .header__logo {
-
+  display: block;
 }
 
 .header__logo-image {
-
+  width: 148px;
+  height: 105px;
 }
 
 .address {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .header__address {
-
+  max-width: 240px;
+  justify-self: end;
 }
 
 .cover {
@@ -182,4 +192,18 @@
 
 }
 
-.footer__social-list {}
+.footer__social-list {
+
+}
+
+.footer__social-list-item {
+
+}
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+
+}
