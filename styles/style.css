@@ -53,31 +53,58 @@
 }
 
 .cover {
-
+  position: relative;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay {
-
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.6;
+  z-index: 1;
 }
 
+/* Заголовок находится под overlay. Разобраться! */
 .cover__title {
-
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  padding: 165px 50px 207px;
 }
 
 .aligned-text {
-
+  text-align: left;
+  margin-right: auto;
 }
 
 .aligned-text_left {
-
+  text-align: left;
 }
 
 .aligned-text_center {
-
+  text-align: center;
 }
 
 .aligned-text_right {
-
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -88,16 +115,35 @@
 
 }
 
-.cover__description {
+/* padding-bottom не работает! */
 
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 50px;
 }
 
 .cover__description-text {
-
+  position: relative;
+  z-index: 3;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  word-spacing: 20px;
 }
 
 .bet-button {
-
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  padding: 12px 32px 11px 31px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color:#ffffff;
 }
 
 .lots {
