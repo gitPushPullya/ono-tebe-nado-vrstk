@@ -236,27 +236,56 @@
 }
 
 .about {
-
+  display: grid;
+  grid-template-columns: 334px auto;
+  min-height: 595px;
 }
 
 .about__column {
-
+  margin-top: 120px;
+  padding: 35px 24px 13px 47px;
 }
 
 .about__logo {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  background-color: #000000;
+  border-radius: 50%;
+  justify-self: center;
 }
 
 .about__logo-image {
+  width: 148px;
+  height: 114px;
+}
 
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: flex-end;
 }
 
 .about__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
 
+.about__text-container {
+  display: grid;
+  gap: 24px;
 }
 
 .about__text {
-
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .footer {
