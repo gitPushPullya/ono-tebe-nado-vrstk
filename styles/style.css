@@ -1,31 +1,38 @@
+/* Поработать над более точным выравниваем */
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 96px 50px 100px;
+  padding: 96px 50px 92px;
 }
 
 .header__menu {
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 100%;
+  min-width: 392px;
+  justify-self: left;
+  align-content: center;
 }
 
 .header__links-list {
   display: flex;
-  justify-content: space-evenly;
-  gap: 13px;
+  justify-content: space-around;
+  justify-self: top;
+  gap: 25px;
+
 }
 
 .header__links-list-item {
   list-style: circle;
+  text-underline-offset: 4px;
+  padding-left: 3px;
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
 }
-
-/* Ссылка должна занимать только нужное пространство */
 
 .header__link {
   align-items: flex-start;
@@ -50,6 +57,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-style: normal;
+  text-underline-offset: 4px;
 }
 
 .header__address {
