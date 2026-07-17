@@ -11,8 +11,6 @@
 
 .header__menu {
   display: flex;
-  /* align-self: center;
-  justify-self: stretch; */
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -75,7 +73,7 @@
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
-  margin-bottom: 180px;
+  margin: 0 0 180px 0;
 }
 
 .overlay {
@@ -87,7 +85,6 @@
   z-index: 1;
 }
 
-/* Поправить заголовок! */
 .cover__title {
   position: relative;
   z-index: 2;
@@ -164,6 +161,7 @@
 .lots {
   display: flex;
   flex-direction: column;
+  margin: 0 24px 120px;
 }
 
 .lots__heading {
@@ -178,13 +176,14 @@
 
 .lots__card-list {
   display: flex;
+  justify-content: center;
   gap: 25px;
-  padding: 27px 24px 53px;
+  padding: 27px 24px 30px;
   list-style: none;
 }
 
 .lots__card-list-item {
-  width: 334px;
+  min-width: 334px;
   min-height: 596px;
   height: 100%;
   display: flex;
@@ -200,9 +199,6 @@
   flex-direction: column;
   background-size: cover;
   background-position: center;
-  width: 334px;
-  min-height: 596px;
-  height: 100%;
   text-decoration: none;
 }
 
@@ -250,7 +246,8 @@
   font-size: 20px;
   line-height: 23px;
   color: #000000;
-  padding-left: 40px;
+  padding: 0 0 0 40px;
+  text-underline-offset: 4px;
 }
 
 .about {
