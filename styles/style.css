@@ -52,6 +52,10 @@
   text-underline-offset: 4px;
 }
 
+.address__text {
+  text-decoration: none;
+}
+
 .header__address {
   justify-self: end;
   max-width: 240px;
@@ -290,7 +294,7 @@
   display: grid;
   grid-template-columns: 1fr 164px 1fr;
   gap: 155px;
-  margin-top: 180px;
+  margin: 180px 0 0;
   padding: 0 50px;
 }
 
@@ -310,7 +314,7 @@
   text-align: center;
 }
 
-.link__no-underline {
+.footer__link_active {
   text-decoration: none;
 }
 
@@ -324,4 +328,5 @@
 .footer__social-icon {
   width: 48px;
   height: 48px;
+  display: block;
 }
